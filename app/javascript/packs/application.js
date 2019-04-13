@@ -18,3 +18,4 @@
 console.log('Hello World from Webpacker')
 
 import "controllers"
+import "../../assets/stylesheets/application.css"

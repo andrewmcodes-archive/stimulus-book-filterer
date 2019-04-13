@@ -1,14 +1,13 @@
-<h1>All Books</h1>
-<div data-controller="select-filter" data-select-filter-url="<%= books_filter_path %>">
-  <div class="left-col">
-    <h2>Filter categories:</h2>
-    <select name="categories" multiple size="<%= @categories.length %>"  data-action="select-filter#change">
+<h1 class="text-center text-5xl text-white font-bold py-8 mb-4 bg-gray-800">All Books</h1>
+<div class="w-full flex" data-controller="select-filter" data-select-filter-url="<%= books_filter_path %>">
+  <div class="w-1/4">
+    <select class="min-h-screen px-4" name="categories" multiple size="<%= @categories.length %>"  data-action="select-filter#change">
       <%= @categories.each do |category| %>
         <option value="<%= category %>"><%= category.humanize %></option>
       <% end %>
     </select>
   </div>
-  <div class="right-col" data-target="select-filter.books">
+  <div class="w-3/4" data-target="select-filter.books">
     <%= render partial: 'book_list', locals: { books: @books} %>
   </div>
 </div>
