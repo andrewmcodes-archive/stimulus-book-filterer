@@ -1,24 +1,17 @@
-# README
+# Stimulus list filter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tutorial
 
-Things you may want to cover:
+https://johnbeatty.co/2018/10/04/stimulus-js-tutorial-using-multi-select-to-pare-down-a-large-set-of-data/
 
-* Ruby version
+## Instructions
 
-* System dependencies
+```sh
+git clone https://github.com/andrewmcodes/stimulus-book-filterer.git
+cd stimulus-book-filterer
+bundle && yarn
+rails db:create db:migrate db:seed
+foreman start
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Navigate to localhost:5000
